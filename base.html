@@ -14,7 +14,7 @@
     display: flex;
     background-color: #22212C;
     color: #837E9F;
-    border: solid blue;
+    border: transparent;
     margin: 0% 0% 0% 0% ;
     height: fit-content;
     flex-direction: row;
@@ -24,7 +24,7 @@
         flex-direction: column;
         gap: 10px;
         margin: 20px 10px 20px 20px;
-        border: solid blue;
+        border: transparent;
     
     }
     #maestro > div{
@@ -56,6 +56,9 @@
         top: 25px;
 
     }
+    #block1>p{
+        font-size: small;
+    }
     #block2{
         border: transparent;
         border-radius: 20px 20px 20px 20px;
@@ -77,10 +80,15 @@
         gap: 30px;
         position: relative;
         left: 50px;
-    }
-    a:link{
         text-decoration: none;
+        -webkit-transition: color 1s;
+        transition: color 1s;
+        
     }
+    #block2>a:hover{
+        color: yellow;
+    }
+    
     #block3{
         border: transparent;
         border-radius: 20px 20px 20px 20px;
@@ -108,6 +116,8 @@
         justify-content: center;
         position: relative;
         bottom: 20px;
+        font-size: small;
+        font-weight:bold;
     }
     #block3>#duck>div{
         display: flex;
@@ -227,7 +237,7 @@
     #maestra{
         display: flex;
         flex-direction: column;
-        border: solid red;
+        border: transparent;
         gap: 10px;
         margin: 20px 20px 20px 10px;
         width: 100%;
@@ -255,7 +265,12 @@
     #block6>a{
         margin-right: 10px;
         text-decoration: none;
+        -webkit-transition: color 1s;
+        transition: color 1s;
         color:#837E9F
+    }
+    #block6>a:hover{
+        color: yellow;
     }
     #block7{
         display: flex;
@@ -429,7 +444,7 @@
     #block9>#insideblock9{
         display: flex;
         flex-direction: column;
-        border: solid green;
+        border: transparent;
         width: fit-content;
 
 
@@ -444,26 +459,39 @@
     #block9>#insideblock9>#block9top{
         display: flex;
         flex-direction: column;
-        border: solid yellow;
+        border: transparent;
         row-gap: 0px;
 
     }
     #block9>#insideblock9>#block9top>#title{
         font-weight: bolder;
         margin-bottom: 0px;
+        font-size: large
 
     }
-
+    #block9>#insideblock9>#block9top>#time{
+        font-size: small;
+        margin-top: 2px;
+    }
+    #block9>#insideblock9>p{
+        font-size: medium;
+        margin-bottom: 2px;
+        
+    }
 
     #block9>#insideblock9>#details{
         font-size: small;
         display: flex;
         flex-direction: row;
-        border: solid blue;
+        border: transparent;
         justify-content: stretch;
         gap: 40px;
+        height:fit-content ;
 
-
+    }
+    #block9>#insideblock9>#details>p{
+        border: transparent;
+        margin-top: 2px;
     }
 
 
